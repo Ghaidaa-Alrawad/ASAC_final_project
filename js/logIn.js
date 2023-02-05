@@ -17,7 +17,7 @@ function signIn(){
             if(user.username === username && user.password === password) {
                 showError = false;
                 localStorage.setItem('active', true);
-                redirect("ASAC_final_project/homePage.html");
+                redirect("/ASAC_final_project/homePage.html");
             }
         }
         if (showError) {
