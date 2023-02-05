@@ -1,10 +1,11 @@
+<!-- This will be the log in page -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bookshelf</title>
+    <title>Bookshelf LogIn</title>
     <link rel="icon" type="image/x-icon" href="assets/img/logo.png" />
     <!-- Font Awesome icons (free version)-->
     <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
@@ -18,134 +19,46 @@
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="css/styles2.css">
+    <link rel="stylesheet" href="css/logInStyle.css">
 </head>
-<body id="page-top">
-    <!-- Navigation-->
-    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
-        <div class="container px-4 px-lg-5">
-            <a class="navbar-brand" href="#">Ghaidaa Alrawad</a>
-            <div class="collapse navbar-collapse" id="navbarResponsive">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>    
-                    <li class="nav-item"><a class="nav-link" href="#funnyParagraphs">Need An Encouragement To Start?</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#Quotes">Quotes</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#Books">Get Your Book</a></li>               
-                </ul>
-            </div>
-        </div>
-    </nav>
-    <!-- Masthead-->
-    <header class="masthead">
-        <div class="container px-4 px-lg-5 d-flex h-100 align-items-center justify-content-center">
-            <div class="d-flex justify-content-center">
-                <div class="text-center">
+<body>
+    <section class="vh-100 gradient-custom backColor" id="section">
+        <div class="container py-5 h-100">
+          <div class="row d-flex justify-content-center align-items-center h-100">
+            <div class="col-12 col-md-8 col-lg-6 col-xl-5">
+              <div class="fromColor" style="border-radius: 1rem;">
+                <div class="card-body p-5 text-center">
+      
+                  <div class="mb-md-5 mt-md-4 pb-5">
+      
+                    <form onsubmit="signIn()">
+                        <h2 class="text-white text-uppercase">Login</h2>
+                        <p class="text-white-50 mb-5">Hey There!, please enter you Username and Password</p>
+                        
+                        <div class="form-outline form-white mb-4">
+                          <input type="text" name="password" id="username" placeholder="Enter Your Username" class="form-control form-control-lg" />
+                          <label class="form-label" for="typeEmailX">Username</label>
+                        </div>
+                        
+                        <div class="form-outline form-white mb-4">
+                          <input type="password" name="password" id="password" placeholder="Enter Your Password" class="form-control form-control-lg" />
+                          <label class="form-label" for="typePasswordX">Password</label>
+                        </div>
+                        
+                        <button class="btn btn-outline-light btn-lg px-5" type="submit">Go</button>      
+                        <span id="error"></span>
+                        
+                    </form>
                 
-                    <h1 class="mx-auto my-0 text-uppercase">Bookshelf</h1>
-                    <p class="text-white-50">Looking for a book? This is the right place, go ahead and search for your favorite book, or explore a new one.</p>
+                  </div>      
                 </div>
-            </div>
-        </div>
-    </header>
-    <!-- About-->
-    <section class="about-section text-center" id="about">
-        <div class="container px-4 px-lg-5">
-            <div class="row gx-4 gx-lg-5 justify-content-center">
-                <div class="col-lg-8">
-                    <h2 class="text-white mb-4">Why This Project?</h2>
-                    <p class="text-white-50">
-                        The Bookshelf Library Project website is a testament to my work on the ASAC fall training with the instructor Boshra Jaber. 
-                        Under Boshra's expert guidance, I was able to build this website using HTML, CSS, JavaScript, and REST API to bring the book's picture, name, and year of publishing.                    </p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-
-    <section class="projects-section bg-light">
-        <div class="container px-4 px-lg-5">
-            <!-- 2 funny paragraphs about reading books -->
-            <div class="row gx-0 mb-5 mb-lg-0 justify-content-center" id="funnyParagraphs">
-                <div class="col-lg-6">
-                    <div class="bg-black text-center h-100 project">
-                        <div class="d-flex h-100">
-                            <div class="project-text w-100 my-auto text-center text-lg-left">
-                                <p class="mb-0 text-white">You know what is the best part? No gym membership required, just your device and a comfy chair.</p>
-                                <p class="mb-0 text-white">So why not give it a try and become a bookworm today!</p>
-                                <hr class="d-none d-lg-block mb-0 ms-0" />
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6 order-lg-first">
-                    <div class="bg-black text-center h-100 project">
-                        <div class="d-flex h-100">
-                            <div class="project-text w-100 my-auto text-center text-lg-left">
-                                <p class="mb-0 text-white">Don't just sit there like a couch potato, pick up a book and expand your mind!  </p>
-                                <hr class="d-none d-lg-block mb-0 me-0" />
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!--  Slider QUOTES -->
-        <div  id="Quotes">
-        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-            <div class="carousel-inner">
-              <div class="carousel-item active backColor">
-                <div class="carousel-caption d-none d-md-block quotes">
-                    <h5>“You haven’t got a letter on yours. I suppose she thinks you don’t forget your name. But we’re not stupid — we know we’re called Gred and Forge.”</h5>
-                    <p>– George Weasley, Harry Potter and the Sorcerer’s Stone, Chapter 12</p>
-                  </div>
-              </div>
-              <div class="carousel-item backColor">
-                <div class="carousel-caption d-none d-md-block quotes">
-                    <h5>"A land was full of wonder, mystery, and danger. Some say, to survive it, you need to be as mad as a hatter. Which, luckily, I am."</h5>
-                    <p>- Mad Hatter, 'Alice In Wonderland'.</p>
-                  </div>
-              </div>
-              <div class="carousel-item backColor">
-                <div class="carousel-caption d-none d-md-block quotes">
-                    <h5>“All men have stars, but they are not the same things for different people. For some, who are travelers, the stars are guides. For others they are no more than little lights in the sky. For others, who are scholars, they are problems... But all these stars are silent. You-You alone will have stars as no one else has them.” </h5>
-                    <p>– The Little Prince</p>
-                  </div>
-              </div>
-              <div class="carousel-item backColor">
-                <div class="carousel-caption d-none d-md-block quotes">
-                    <h5>“I don’t think I’m dreaming... I ain’t got the brains to make this up.”</h5>
-                    <p>– Jacob Kowalski, Fantastic Beasts and Where to Find Them</p>
-                  </div>
               </div>
             </div>
-            <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="sr-only">Previous</span>
-            </a>
-            <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="sr-only">Next</span>
-            </a>
           </div>
         </div>
-
-         <!-- Books api in here -->
-        <section id="Books">
-            <div id="searchDiv">
-                <form id="searchForm">
-                    <input type="text" placeholder="Write the name of the book" id="searchID" class="form-control rounded" aria-label="Search" aria-describedby="search-addon">
-                    <button type="submit" id="button" class="btn btn-outline-primary">GO</button>
-                </form>
-            </div>
-            <div id="resultContainer"></div>
-        </section>
-
-    </section>
+      </section>
     
-    
-    </section>
+
     <!-- Footer-->
     <footer class="footer bg-black small text-center text-white-50"><div class="container px-4 px-lg-5">Copyright &copy; ASAC Training Final Project</div></footer>
     <!-- Bootstrap core JS-->
@@ -154,9 +67,8 @@
     <script src="js/scripts.js"></script>
     <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
     <!-- * *                               SB Forms JS                               * *-->
-    <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
     <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
     <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
-    <script src="js/booksApi.js"></script>
+    <script src="js/logIn.js"></script>
 </body>
 </html>

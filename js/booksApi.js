@@ -23,7 +23,6 @@ function render(data){
                 `
             }
     }
-    console.log(book)
     document.getElementById("resultContainer").innerHTML = book;
 }
 
