@@ -1,10 +1,10 @@
 (function () {
     if (!JSON.parse(localStorage.getItem('active'))) {
-        location.replace('/index.html');
+        location.replace('ASAC_final_project/index.html');
     }
   })();
 
 function logOut(){
     localStorage.removeItem('active');
-    location.replace('/index.html');
+    location.replace('ASAC_final_project/index.html');
 }
