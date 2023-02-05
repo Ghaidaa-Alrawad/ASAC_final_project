@@ -8,7 +8,6 @@ function signIn(){
     event.preventDefault();
     const users =JSON.parse(localStorage.getItem('users'));
     console.log('this is the users', users);
-    // var result = document.getElementById('result');
     const error = document.getElementById('error');
     if(users) {
         const username = document.getElementById('username').value;

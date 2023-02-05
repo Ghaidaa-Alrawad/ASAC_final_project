@@ -8,9 +8,3 @@ function logOut(){
     localStorage.removeItem('active');
     location.replace('/index.html');
 }
-
-/**
- * When user logout
- * localStorage.removeItem('active');
- * 
- */
