@@ -14,4 +14,4 @@ Under Boshra's expert guidance, I was able to build this website using HTML, CSS
 This project was created as part of my ASAC field training, and it was a front-end course, well since it's a front-end course I've used the local storage that javascript provides and put some random users manually; to be able to use the log-ing system that I provide in my BookShelf website. 
 Contributions are welcome, but please make sure to open an issue or submit a pull request first.
 
-##If you want to try it and Log in you can use as a username(ghaidaa), and for the passwoed(ggg)
+## If you want to try it and Log in you can use as a username(ghaidaa), and for the passwoed(ggg)
